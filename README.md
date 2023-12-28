@@ -1,6 +1,6 @@
 # Othello!
 
-A single large project completed in three stages and therefore counts as three projects. This project we will be implementing a game of **OTHELLO**, with the final product being a game that can play an intelligent game of **OTHELLO** against a human opponent.
+A single large project completed in three stages and therefore counts as three projects. In this project we will be implementing a game of **OTHELLO**, with the final product being a game that can play an intelligent game of **OTHELLO** against a human opponent.
 
 <img src="./project6/othello!.png" width="400" height="300">
 
@@ -14,7 +14,7 @@ The rules of this game appear on a separate sheet. Basically, the game consists 
 
 The first stage is the **design stage**. In this part representation of the pieces and how the board is displayed is decided (with pecial attention given to the quality of the design, the attractiveness of the board, and the ease of the user interface). This first stage is *derived from the game class*. A child class for `Othello` was created that is responsible for storing the board. The board is a two-dimensional array of spaces, pieces, or pointers to spaces or pieces, where the *spaces are another class* which has been written. This board becomes the principle private member of the `Othello` class. The spaces class is able to store all the attributes that a space (or piece) might have – emptiness, black, white, as well as mutators and accessor functions to transform a piece/space from one state to another.
 
-The design was then implemented to the stage where the user can see the board displayed and be allowed to make one initial move. The first step in doing this was to write the space/piece class, which was **not** derived from anything, but can change states. Then, when writing the `Othello` class, which is derived from the author’s game class, the best first step, after declaring the board, **is to create stubs for all the author’s purely virtual functions** (a stub is a function with an empty implementation, which exists merely to validate a call, or to allow the program to compile). For this stage the following functions were implemented: `display_status`, `make_move`, and `is_legal` which returns true if the move is any of the four allowable initial moves.
+The design was then implemented to the stage where the user can see the board displayed and be allowed to make one initial move. The first step in doing this was to write the space/piece class, which was **not** derived from anything, but can change states. Then, when writing the `Othello` class, which is derived from the author’s game class, the best first step, after declaring the board, **is to create stubs for all the author’s purely virtual functions** (a stub is a function with an empty implementation, which exists merely to validate a call, or to allow the program to compile). For this stage the following functions were implemented: `display_status`, `make_move`, and `is_legal` (returns true if the move is any of the four allowable initial moves).
 
 ### Stage 2
 
